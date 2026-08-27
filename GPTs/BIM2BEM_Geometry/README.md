@@ -1,1 +1,1 @@
-
+Capabilities: Click mark on Web Search and Code Interpreter & Data Analysis

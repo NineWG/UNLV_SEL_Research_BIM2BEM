@@ -1,0 +1,144 @@
+Program Version,EnergyPlus, Version 9.6.0-f420c06a69, YMD=2026.08.26 18:22,
+   ************* Beginning Zone Sizing Calculations
+   ** Warning ** GetHTSurfaceData: Surfaces with interface to Ground found but no "Ground Temperatures" were input.
+   **   ~~~   ** Found first in surface=L1_ZONE_1_FLOOR_1
+   **   ~~~   ** Defaults, constant throughout the year of (18.0) will be used.
+   ** Warning ** GetSurfaceData: Construction BIM2BEM_INTERIOR_WALL of interzone surface L1_ZONE_1_WALL_3 does not have the same materials in the reverse order as the construction BIM2BEM_INTERIOR_WALL of adjacent surface L1_ZONE_2_WALL_7
+   **   ~~~   ** or the properties of the reversed layers are not correct due to differing layer front and back side values
+   **   ~~~   ** ...but Nominal U values are similar, diff=[0.0000] ... simulation proceeds.
+   **   ~~~   ** ...if the two zones are expected to have significantly different temperatures, the proper "reverse" construction should be created.
+   **   ~~~   ** ...this problem for this pair will not be reported again.
+   ** Warning ** GetSurfaceData: There are 86 coincident/collinear vertices; These have been deleted unless the deletion would bring the number of surface sides < 3.
+   **   ~~~   ** For explicit details on each problem surface, use Output:Diagnostics,DisplayExtraWarnings;
+   ** Severe  ** GetSurfaceData: There are 43 degenerate surfaces; Degenerate surfaces are those with number of sides < 3.
+   **   ~~~   ** These surfaces should be deleted.
+   **   ~~~   ** For explicit details on each problem surface, use Output:Diagnostics,DisplayExtraWarnings;
+   ** Warning ** CalculateZoneVolume: 30 zones are not fully enclosed. For more details use:  Output:Diagnostics,DisplayExtrawarnings; 
+   ** Warning ** CheckUsedConstructions: There are 7 nominally unused constructions in input.
+   **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=L1_ZONE_8_WALL_10, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             18.4968)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=L1_ZONE_8_WALL_11, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             18.4968)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=L1_ZONE_8_WALL_13, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             20.3648)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=L1_ZONE_8_WALL_14, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             19.4308)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=L1_ZONE_8_WALL_15, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             92.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=L1_ZONE_8_WALL_16, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             92.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 2 of back surface=L1_ZONE_8_FLOOR_2, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             92.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 2 of back surface=L1_ZONE_8_CEILING_2, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             92.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 2 of back surface=L1_ZONE_8_CEILING_3, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             92.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 2 of back surface=L1_ZONE_8_ROOF_1, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             92.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=L1_ZONE_8_WINDOW_1, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             92.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=L1_ZONE_8_WINDOW_2, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             92.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=L1_ZONE_8_WINDOW_3, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             92.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=L1_ZONE_8_WINDOW_4, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             92.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=L1_ZONE_8_WINDOW_5, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             92.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=L1_ZONE_8_WINDOW_6, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             92.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=L1_ZONE_8_WINDOW_7, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             92.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=L1_ZONE_8_WINDOW_8, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             92.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=L1_ZONE_8_WINDOW_9, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             92.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=L1_ZONE_8
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=L1_ZONE_8_WINDOW_10, is in front of receiving surface=L1_ZONE_8_WALL_17
+   **   ~~~   **    (Dot Product indicator=             92.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Warning ** GetSimpleAirModelInputs: ZoneInfiltration:DesignFlowRate="BIM2BEM_L2_ZONE_24_INFILTRATION", Design Flow Rate Calculation Method specifies Flow per Exterior Surface Area, but Exterior Wall Area = 0.  0 Infiltration will result.
+   ** Warning ** GetSimpleAirModelInputs: ZoneInfiltration:DesignFlowRate="BIM2BEM_L2_ZONE_30_INFILTRATION", Design Flow Rate Calculation Method specifies Flow per Exterior Surface Area, but Exterior Wall Area = 0.  0 Infiltration will result.
+   ** Warning ** GetSimpleAirModelInputs: ZoneInfiltration:DesignFlowRate="BIM2BEM_L2_ZONE_42_INFILTRATION", Design Flow Rate Calculation Method specifies Flow per Exterior Surface Area, but Exterior Wall Area = 0.  0 Infiltration will result.
+   ** Warning ** ManageSizing: For a plant sizing run, there must be at least 1 Sizing:Plant object input. SimulationControl Plant Sizing option ignored.
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ************* Simulation Error Summary *************
+   ************* There are 14 unused schedules in input.
+   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
+   *************
+   ************* ===== Final Error Summary =====
+   ************* The following error categories occurred.  Consider correcting or noting.
+   ************* Nominally Unused Constructions
+   ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause
+   ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm
+   ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 8 Warning; 20 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 94 Warning; 63 Severe Errors; Elapsed Time=00hr 00min 33.88sec

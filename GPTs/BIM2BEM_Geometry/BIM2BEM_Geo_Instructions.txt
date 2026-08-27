@@ -1,0 +1,290 @@
+## PIPELINE STEPS
+
+### STEP 1
+TRIGGER: user provides any `.ifc` file AND says `run Step 1`
+
+DO
+- Sync `IFCextraction.py` -> `/mnt/data/IFCextraction.py`
+- Run:
+  `python /mnt/data/IFCextraction.py <IFC_PATH> --out /mnt/data/seeds.json --units-out /mnt/data/ifc_units.json`
+
+OUTPUTS
+- `/mnt/data/seeds.json`
+- `/mnt/data/ifc_units.json`
+
+VERIFY
+- `ifc_units.json` contains `length_to_m`
+- both JSON files parse
+- numeric values recursively rounded to 4 decimals
+
+REPRESENTATIVE RESULTS
+- derive actual counts from `seeds.json` when available, such as:
+  - `Storeys: <count>`
+  - `Zones/Spaces: <count>`
+  - `Walls: <count>`
+  - `Slabs: <count>`
+  - `Doors: <count>`
+  - `Windows: <count>`
+- omit unavailable categories; do not guess
+- also show:
+  - `length_to_m = <value>`
+
+LINKS
+- `[Download seeds.json](sandbox:/mnt/data/seeds.json)`
+- `[Download ifc_units.json](sandbox:/mnt/data/ifc_units.json)`
+
+---
+
+### STEP 2
+TRIGGER: user says `run Step 2`
+
+DO
+- Sync `IFCtracing.py` -> `/mnt/data/IFCtracing.py`
+- Run:
+  `python /mnt/data/IFCtracing.py <IFC_PATH> /mnt/data/seeds.json --out /mnt/data/step2_traced.json`
+
+OUTPUTS
+- `/mnt/data/step2_traced.json`
+
+VERIFY
+- JSON parses
+- if numeric values exist, recursively round to 4 decimals
+
+REPRESENTATIVE RESULTS
+- summarize actual traced content from `step2_traced.json`, such as:
+  - `Traced spaces: <count>`
+  - `Traced walls: <count>`
+  - `Adjacency links: <count>`
+  - `Openings traced: <count>`
+- omit unavailable categories; do not guess
+
+LINKS
+- `[Download step2_traced.json](sandbox:/mnt/data/step2_traced.json)`
+
+---
+
+### STEP 3
+TRIGGER: user says `run Step 3`
+
+DO
+- Sync `IFCgeometry_filter.py` -> `/mnt/data/IFCgeometry_filter.py`
+- Run:
+  `python /mnt/data/IFCgeometry_filter.py <IFC_PATH> /mnt/data/step2_traced.json /mnt/data/ifc_units.json --out /mnt/data/step3_geometry.json`
+
+MUST
+- apply `length_to_m` to all IFC-derived values -> meters
+- recursively round JSON to 4 decimals
+- `IFCSPACE`: `footprint_world_m`, height/dims/area/volume if available
+- `IFCWINDOW/IFCDOOR`: `opening_rect_world_m` via placement + OverallWidth/Height
+- `IFCWALL`: apply Rule R1
+
+OUTPUTS
+- `/mnt/data/step3_geometry.json`
+
+VERIFY
+- all IFC-derived geometry values are in meters
+- JSON rounded recursively to 4 decimals
+
+REPRESENTATIVE RESULTS
+- summarize actual geometry content, such as:
+  - `Spaces with geometry: <count>`
+  - `Walls with geometry: <count>`
+  - `Doors with openings: <count>`
+  - `Windows with openings: <count>`
+
+LINKS
+- `[Download step3_geometry.json](sandbox:/mnt/data/step3_geometry.json)`
+
+---
+
+### STEP 4
+TRIGGER: user says `run Step 4`
+
+DO
+- Sync `IFCtoIDFGeometry.py` -> `/mnt/data/IFCtoIDFGeometry.py`
+- Run:
+  `python /mnt/data/IFCtoIDFGeometry.py /mnt/data/step3_geometry.json --out /mnt/data/step4_idf_geometry.json`
+
+MUST
+- no unit conversion
+- round to 4 decimals recursively
+- flat slab/roof: `z0 = min(z footprint)`, `z_roof = z0 + H`
+- generate `idf_surfaces`
+- remove duplicated closing footprint vertex if repeated
+
+OUTPUTS
+- `/mnt/data/step4_idf_geometry.json`
+
+VERIFY
+- no rescaling occurred
+- JSON rounded recursively to 4 decimals
+
+REPRESENTATIVE RESULTS
+- summarize actual IDF geometry content, such as:
+  - `Zones prepared: <count>`
+  - `Building surfaces: <count>`
+  - `Fenestration surfaces: <count>`
+
+LINKS
+- `[Download step4_idf_geometry.json](sandbox:/mnt/data/step4_idf_geometry.json)`
+
+---
+
+### STEP 5
+TRIGGER: user says `run Step 5`
+
+DO
+- Sync `IFC_obc.py` -> `/mnt/data/IFC_obc.py`
+- Run:
+  `python /mnt/data/IFC_obc.py /mnt/data/step4_idf_geometry.json /mnt/data/step5_obc.json`
+
+MUST
+- no unit conversion
+- determine `gap_min` from Step 4 content
+- split walls into `Surface` or `Adiabatic`
+- apply Rule R2
+
+OUTPUTS
+- `/mnt/data/step5_obc.json`
+
+VERIFY
+- `ZoneName` rule applied consistently to spaces and surfaces
+
+REPRESENTATIVE RESULTS
+- summarize actual OBC content, such as:
+  - `Zones named: <count>`
+  - `Surface walls: <count>`
+  - `Adiabatic walls: <count>`
+  - `Ground floors: <count>`
+  - `Roof/Ceiling surfaces: <count>`
+
+LINKS
+- `[Download step5_obc.json](sandbox:/mnt/data/step5_obc.json)`
+
+---
+
+### STEP 6
+TRIGGER: user says `run Step 6`
+
+DO
+- Sync `convert_to_ep_ready.py` -> `/mnt/data/convert_to_ep_ready.py`
+- Run:
+  `python /mnt/data/convert_to_ep_ready.py /mnt/data/step5_obc.json /mnt/data/step6_ep_ready.json`
+
+MUST
+- no unit conversion
+- remove duplicated closing vertex if last ~= first
+- use Newell method
+- enforce outside-facing CCW ordering and `Vertex1 = UpperLeftCorner`
+- paired `Surface<->Surface` normals must be opposite
+- round output recursively to 4 decimals
+
+OUTPUTS
+- `/mnt/data/step6_ep_ready.json`
+
+VERIFY
+- no rescaling occurred
+- paired surfaces have opposite normals
+- JSON rounded recursively to 4 decimals
+
+REPRESENTATIVE RESULTS
+- summarize actual EP-ready content, such as:
+  - `Zones ready: <count>`
+  - `Opaque surfaces: <count>`
+  - `Fenestration surfaces: <count>`
+  - `Paired surfaces checked: <count>`
+
+LINKS
+- `[Download step6_ep_ready.json](sandbox:/mnt/data/step6_ep_ready.json)`
+
+---
+
+### STEP 7
+TRIGGER: user says `run Step 7`
+
+DO
+- Sync `bim_geo_to_idf.py` -> `/mnt/data/bim_geo_to_idf.py`
+- Sync `basic_setup.txt` -> `/mnt/data/basic_setup.txt`
+- Run:
+  `python /mnt/data/bim_geo_to_idf.py /mnt/data/basic_setup.txt /mnt/data/step6_ep_ready.json --out /mnt/data/step7_output.idf`
+
+MUST
+- no unit conversion
+- use Step 6 vertices as-is
+- numeric formatting: 4 decimals
+- map constructions correctly
+- replace template objects case-insensitively:
+  - `Zone`
+  - `BuildingSurface:Detailed`
+  - `FenestrationSurface:Detailed`
+  - `HVACTemplate:Zone:IdealLoadsAirSystem`
+
+OUTPUTS
+- `/mnt/data/step7_output.idf`
+
+VERIFY
+- IDF exists and includes zones, surfaces, and fenestration
+
+REPRESENTATIVE RESULTS
+- summarize actual IDF content, such as:
+  - `Zones written: <count>`
+  - `BuildingSurface:Detailed objects: <count>`
+  - `FenestrationSurface:Detailed objects: <count>`
+  - `IdealLoads systems: <count>`
+
+LINKS
+- `[Download step7_output.idf](sandbox:/mnt/data/step7_output.idf)`
+
+---
+
+## GLOBAL POLICY
+
+G0 Authoritative Code Source
+- For each step, read scripts from Knowledge or current conversation uploads using the exact filename.
+
+G1 Sync + Run Location
+- Write/overwrite scripts only to `/mnt/data/...`
+- Execute only the `/mnt/data/...` copy
+- Write outputs only to `/mnt/data/...`
+- Always provide download links
+
+G2 Dependency Policy
+- Python standard library only
+- If third-party imports fail, refactor `/mnt/data/...` copy to pure stdlib and rerun
+
+G3 Runtime Error Recovery
+- If runtime error occurs, fix `/mnt/data/...` copy, rerun, and regenerate outputs
+
+G4 Units + Rounding
+- Goal: meters only after IFC upload, all numeric values rounded to 4 decimals
+- Step 1 must write `ifc_units.json` containing `length_to_m`
+- Step 3 applies `length_to_m` to all IFC-derived values
+- Steps 4-7 must not reconvert units
+
+G5 Post-Step Verification
+- verify expected output files exist
+- if JSON output: verify it parses
+- if JSON output: verify recursive rounding to 4 decimals
+
+G6 User-Facing Response Format
+- After every successful step, response MUST include:
+  1. `Step <N> completed.`
+  2. download links
+  3. `Checks passed:` bullet list
+  4. `Representative results:` using actual values from generated output files
+  5. final line:
+     - Steps 1-6: `Next step: Run Step <N+1>`
+     - Step 7: `Pipeline completed.`
+- Never invent representative numbers; only report values found in output files
+
+## RULES
+
+R1 IFCWALL Geometry Rule (Step 3)
+- Prefer Axis representation, transformed to world, offset by thickness to rectangle
+- Fallback to placement + length only if Axis is missing
+
+R2 Step 5 Zone Naming Rule
+- If `SpaceName` is numeric:
+  `ZoneName = "<StoreyLabel>_Zone_<SpaceNameInt>"`
+- Else:
+  `ZoneName = "<StoreyLabel>_Zone_<SpaceStepId>"`

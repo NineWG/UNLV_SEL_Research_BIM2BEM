@@ -1,0 +1,2113 @@
+[
+  {
+    "StepId": "#37",
+    "Entity": "IFCBUILDINGSTOREY",
+    "Name": "L1",
+    "GlobalId": "2JF4e6axWHqu3u0C1FZlmi",
+    "Elevation_m": 0.0
+  },
+  {
+    "StepId": "#41",
+    "Entity": "IFCBUILDINGSTOREY",
+    "Name": "L2",
+    "GlobalId": "21NWFdPY1C4Ql4nee9F9MF",
+    "Elevation_m": 7.0
+  },
+  {
+    "StepId": "#45",
+    "Entity": "IFCBUILDINGSTOREY",
+    "Name": "L3",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lsXA",
+    "Elevation_m": 13.0
+  },
+  {
+    "StepId": "#49",
+    "Entity": "IFCBUILDINGSTOREY",
+    "Name": "L4",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lsnr",
+    "Elevation_m": 17.0
+  },
+  {
+    "StepId": "#53",
+    "Entity": "IFCBUILDINGSTOREY",
+    "Name": "L5",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lsq4",
+    "Elevation_m": 22.3
+  },
+  {
+    "StepId": "#89",
+    "Entity": "IFCSPACE",
+    "Name": "1",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktZu",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#215",
+    "Entity": "IFCSPACE",
+    "Name": "2",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktZc",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#284",
+    "Entity": "IFCSPACE",
+    "Name": "3",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktZa",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#353",
+    "Entity": "IFCSPACE",
+    "Name": "4",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktZY",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#422",
+    "Entity": "IFCSPACE",
+    "Name": "5",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktZW",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#491",
+    "Entity": "IFCSPACE",
+    "Name": "6",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktZk",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#560",
+    "Entity": "IFCSPACE",
+    "Name": "7",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktZi",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#642",
+    "Entity": "IFCSPACE",
+    "Name": "8",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktZg",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#711",
+    "Entity": "IFCSPACE",
+    "Name": "9",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktZe",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#780",
+    "Entity": "IFCSPACE",
+    "Name": "10",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktaM",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#849",
+    "Entity": "IFCSPACE",
+    "Name": "11",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktaK",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#918",
+    "Entity": "IFCSPACE",
+    "Name": "19",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktaI",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#987",
+    "Entity": "IFCSPACE",
+    "Name": "13",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktaG",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#1056",
+    "Entity": "IFCSPACE",
+    "Name": "14",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktaU",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#1125",
+    "Entity": "IFCSPACE",
+    "Name": "15",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktaS",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#1194",
+    "Entity": "IFCSPACE",
+    "Name": "16",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktaQ",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#1263",
+    "Entity": "IFCSPACE",
+    "Name": "17",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRktaO",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#1332",
+    "Entity": "IFCSPACE",
+    "Name": "18",
+    "GlobalId": "1ySTnbeQPAYQ7D4LfRkta6",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#1412",
+    "Entity": "IFCSPACE",
+    "Name": "12",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVSY",
+    "StoreyStepId": "#37",
+    "StoreyElevation_m": 0.0
+  },
+  {
+    "StepId": "#1481",
+    "Entity": "IFCSPACE",
+    "Name": "20",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpH",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#1558",
+    "Entity": "IFCSPACE",
+    "Name": "21",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpM",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#1627",
+    "Entity": "IFCSPACE",
+    "Name": "22",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpK",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#1696",
+    "Entity": "IFCSPACE",
+    "Name": "25",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpQ",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#1765",
+    "Entity": "IFCSPACE",
+    "Name": "24",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpO",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#1834",
+    "Entity": "IFCSPACE",
+    "Name": "23",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpU",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#1912",
+    "Entity": "IFCSPACE",
+    "Name": "27",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpS",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#1981",
+    "Entity": "IFCSPACE",
+    "Name": "28",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpY",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#2050",
+    "Entity": "IFCSPACE",
+    "Name": "29",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpW",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#2130",
+    "Entity": "IFCSPACE",
+    "Name": "30",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpc",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#2199",
+    "Entity": "IFCSPACE",
+    "Name": "31",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpa",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#2268",
+    "Entity": "IFCSPACE",
+    "Name": "32",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpg",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#2339",
+    "Entity": "IFCSPACE",
+    "Name": "34",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpk",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#2408",
+    "Entity": "IFCSPACE",
+    "Name": "35",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpi",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#2477",
+    "Entity": "IFCSPACE",
+    "Name": "36",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpo",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#2546",
+    "Entity": "IFCSPACE",
+    "Name": "37",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpm",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#2615",
+    "Entity": "IFCSPACE",
+    "Name": "38",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZps",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#2684",
+    "Entity": "IFCSPACE",
+    "Name": "39",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpq",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#2753",
+    "Entity": "IFCSPACE",
+    "Name": "40",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpw",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#2824",
+    "Entity": "IFCSPACE",
+    "Name": "42",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZp_",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#2893",
+    "Entity": "IFCSPACE",
+    "Name": "43",
+    "GlobalId": "0dpFQ$f213TRdEhy71KZpy",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#2962",
+    "Entity": "IFCSPACE",
+    "Name": "44",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYC2",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#3031",
+    "Entity": "IFCSPACE",
+    "Name": "45",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYCZ",
+    "StoreyStepId": "#45",
+    "StoreyElevation_m": 13.0
+  },
+  {
+    "StepId": "#3101",
+    "Entity": "IFCSPACE",
+    "Name": "46",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYCW",
+    "StoreyStepId": "#45",
+    "StoreyElevation_m": 13.0
+  },
+  {
+    "StepId": "#3184",
+    "Entity": "IFCSPACE",
+    "Name": "47",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYCc",
+    "StoreyStepId": "#45",
+    "StoreyElevation_m": 13.0
+  },
+  {
+    "StepId": "#3255",
+    "Entity": "IFCSPACE",
+    "Name": "49",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYCg",
+    "StoreyStepId": "#45",
+    "StoreyElevation_m": 13.0
+  },
+  {
+    "StepId": "#3324",
+    "Entity": "IFCSPACE",
+    "Name": "50",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYCe",
+    "StoreyStepId": "#45",
+    "StoreyElevation_m": 13.0
+  },
+  {
+    "StepId": "#3393",
+    "Entity": "IFCSPACE",
+    "Name": "51",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYCk",
+    "StoreyStepId": "#45",
+    "StoreyElevation_m": 13.0
+  },
+  {
+    "StepId": "#3462",
+    "Entity": "IFCSPACE",
+    "Name": "52",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYCi",
+    "StoreyStepId": "#45",
+    "StoreyElevation_m": 13.0
+  },
+  {
+    "StepId": "#3531",
+    "Entity": "IFCSPACE",
+    "Name": "53",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYCo",
+    "StoreyStepId": "#45",
+    "StoreyElevation_m": 13.0
+  },
+  {
+    "StepId": "#3600",
+    "Entity": "IFCSPACE",
+    "Name": "54",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYCm",
+    "StoreyStepId": "#45",
+    "StoreyElevation_m": 13.0
+  },
+  {
+    "StepId": "#3669",
+    "Entity": "IFCSPACE",
+    "Name": "55",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYCs",
+    "StoreyStepId": "#45",
+    "StoreyElevation_m": 13.0
+  },
+  {
+    "StepId": "#3738",
+    "Entity": "IFCSPACE",
+    "Name": "56",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYCq",
+    "StoreyStepId": "#45",
+    "StoreyElevation_m": 13.0
+  },
+  {
+    "StepId": "#3807",
+    "Entity": "IFCSPACE",
+    "Name": "57",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYCw",
+    "StoreyStepId": "#45",
+    "StoreyElevation_m": 13.0
+  },
+  {
+    "StepId": "#3876",
+    "Entity": "IFCSPACE",
+    "Name": "58",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYD8",
+    "StoreyStepId": "#49",
+    "StoreyElevation_m": 17.0
+  },
+  {
+    "StepId": "#3948",
+    "Entity": "IFCSPACE",
+    "Name": "60",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYDJ",
+    "StoreyStepId": "#49",
+    "StoreyElevation_m": 17.0
+  },
+  {
+    "StepId": "#4017",
+    "Entity": "IFCSPACE",
+    "Name": "61",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYDH",
+    "StoreyStepId": "#49",
+    "StoreyElevation_m": 17.0
+  },
+  {
+    "StepId": "#4088",
+    "Entity": "IFCSPACE",
+    "Name": "26",
+    "GlobalId": "2s7HpmPET9lwYNVlx1NmNE",
+    "StoreyStepId": "#41",
+    "StoreyElevation_m": 7.0
+  },
+  {
+    "StepId": "#4165",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1669503",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQ$jb"
+  },
+  {
+    "StepId": "#4284",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1669837",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQ$ZN"
+  },
+  {
+    "StepId": "#4341",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1671929",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQm3Z"
+  },
+  {
+    "StepId": "#4389",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1672296",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQmPo"
+  },
+  {
+    "StepId": "#4446",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1672505",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQmSZ"
+  },
+  {
+    "StepId": "#4507",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1672634",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQmUW"
+  },
+  {
+    "StepId": "#4567",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1672802",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQmHu"
+  },
+  {
+    "StepId": "#4624",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1673016",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQmKY"
+  },
+  {
+    "StepId": "#4681",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1673347",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQmgP"
+  },
+  {
+    "StepId": "#4738",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1673612",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQmkM"
+  },
+  {
+    "StepId": "#4784",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1673881",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQmY3"
+  },
+  {
+    "StepId": "#4845",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1674015",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQma5"
+  },
+  {
+    "StepId": "#4902",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1674150",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQmcy"
+  },
+  {
+    "StepId": "#4959",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1674463",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQmx5"
+  },
+  {
+    "StepId": "#5017",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1675077",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQmrV"
+  },
+  {
+    "StepId": "#5075",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1675189",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQmsl"
+  },
+  {
+    "StepId": "#5135",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1675364",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQn9_"
+  },
+  {
+    "StepId": "#5200",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1675513",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQnBZ"
+  },
+  {
+    "StepId": "#5258",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1675758",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQnFq"
+  },
+  {
+    "StepId": "#5315",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1675855",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQn1L"
+  },
+  {
+    "StepId": "#5374",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1676063",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQn45"
+  },
+  {
+    "StepId": "#5439",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1676569",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQnS3"
+  },
+  {
+    "StepId": "#5498",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1676704",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQnUw"
+  },
+  {
+    "StepId": "#5555",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1676813",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQnGN"
+  },
+  {
+    "StepId": "#5612",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1677111",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQnKj"
+  },
+  {
+    "StepId": "#5671",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1677260",
+    "GlobalId": "0Ib4MzjLjEY97eSsnoQnNM"
+  },
+  {
+    "StepId": "#5937",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Generic - 300mm:1690395",
+    "GlobalId": "2sAW4Qcu538ei82erf5l53"
+  },
+  {
+    "StepId": "#7638",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:900 x 2100mm:1691253",
+    "GlobalId": "2sAW4Qcu538ei82erf5lGj"
+  },
+  {
+    "StepId": "#9325",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:900 x 2100mm:1692152",
+    "GlobalId": "2sAW4Qcu538ei82erf5kkW"
+  },
+  {
+    "StepId": "#9375",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:900 x 2100mm:1692640",
+    "GlobalId": "2sAW4Qcu538ei82erf5kcu"
+  },
+  {
+    "StepId": "#9423",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:900 x 2100mm:1692744",
+    "GlobalId": "2sAW4Qcu538ei82erf5kuG"
+  },
+  {
+    "StepId": "#11073",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:900 x 2100mm:1693002",
+    "GlobalId": "2sAW4Qcu538ei82erf5kyI"
+  },
+  {
+    "StepId": "#11123",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:900 x 2100mm:1693086",
+    "GlobalId": "2sAW4Qcu538ei82erf5k$6"
+  },
+  {
+    "StepId": "#11170",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:900 x 2100mm:1693249",
+    "GlobalId": "2sAW4Qcu538ei82erf5kmP"
+  },
+  {
+    "StepId": "#11218",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:900 x 2100mm:1693343",
+    "GlobalId": "2sAW4Qcu538ei82erf5kp7"
+  },
+  {
+    "StepId": "#12868",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:1000 x 2100mm:1693803",
+    "GlobalId": "2sAW4Qcu538ei82erf5k8p"
+  },
+  {
+    "StepId": "#12938",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:1000 x 2100mm:1693960",
+    "GlobalId": "2sAW4Qcu538ei82erf5kDG"
+  },
+  {
+    "StepId": "#16098",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Double-Flush:1800 x 2100mm:1694200",
+    "GlobalId": "2sAW4Qcu538ei82erf5kEW"
+  },
+  {
+    "StepId": "#19273",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Double-Flush:1800 x 2100mm:1694249",
+    "GlobalId": "2sAW4Qcu538ei82erf5k1n"
+  },
+  {
+    "StepId": "#19783",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1694975",
+    "GlobalId": "2$Og93fmzBnQSQibDXlFaP"
+  },
+  {
+    "StepId": "#20239",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1695056",
+    "GlobalId": "2$Og93fmzBnQSQibDXlFYs"
+  },
+  {
+    "StepId": "#20421",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1695248",
+    "GlobalId": "2$Og93fmzBnQSQibDXlFls"
+  },
+  {
+    "StepId": "#20603",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1695334",
+    "GlobalId": "2$Og93fmzBnQSQibDXlFk0"
+  },
+  {
+    "StepId": "#20785",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1695452",
+    "GlobalId": "2$Og93fmzBnQSQibDXlFiw"
+  },
+  {
+    "StepId": "#20968",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1695512",
+    "GlobalId": "2$Og93fmzBnQSQibDXlFh_"
+  },
+  {
+    "StepId": "#21150",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1695568",
+    "GlobalId": "2$Og93fmzBnQSQibDXlFgs"
+  },
+  {
+    "StepId": "#21332",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1695728",
+    "GlobalId": "2$Og93fmzBnQSQibDXlFeM"
+  },
+  {
+    "StepId": "#21514",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1695810",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCMa"
+  },
+  {
+    "StepId": "#21696",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1695886",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCLe"
+  },
+  {
+    "StepId": "#21878",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1695952",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCKs"
+  },
+  {
+    "StepId": "#22060",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1696024",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCJ_"
+  },
+  {
+    "StepId": "#22242",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1696084",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCIo"
+  },
+  {
+    "StepId": "#22424",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1696136",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCHk"
+  },
+  {
+    "StepId": "#22606",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1696186",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCHS"
+  },
+  {
+    "StepId": "#22788",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1696220",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCGw"
+  },
+  {
+    "StepId": "#22970",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1696258",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCVa"
+  },
+  {
+    "StepId": "#23153",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1696312",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCVU"
+  },
+  {
+    "StepId": "#23335",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1696412",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCTw"
+  },
+  {
+    "StepId": "#23518",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1696492",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCSA"
+  },
+  {
+    "StepId": "#23700",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1696550",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCR0"
+  },
+  {
+    "StepId": "#23882",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1696602",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCQy"
+  },
+  {
+    "StepId": "#24065",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1696710",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCOW"
+  },
+  {
+    "StepId": "#24247",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1696792",
+    "GlobalId": "2$Og93fmzBnQSQibDXlC7_"
+  },
+  {
+    "StepId": "#24429",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1696876",
+    "GlobalId": "2$Og93fmzBnQSQibDXlC6A"
+  },
+  {
+    "StepId": "#24611",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1696952",
+    "GlobalId": "2$Og93fmzBnQSQibDXlC5U"
+  },
+  {
+    "StepId": "#24793",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1697024",
+    "GlobalId": "2$Og93fmzBnQSQibDXlC3c"
+  },
+  {
+    "StepId": "#24975",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1697086",
+    "GlobalId": "2$Og93fmzBnQSQibDXlC3O"
+  },
+  {
+    "StepId": "#25157",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1697172",
+    "GlobalId": "2$Og93fmzBnQSQibDXlC1o"
+  },
+  {
+    "StepId": "#25339",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1697244",
+    "GlobalId": "2$Og93fmzBnQSQibDXlC0w"
+  },
+  {
+    "StepId": "#25521",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1697302",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCFm"
+  },
+  {
+    "StepId": "#25703",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1697400",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCEU"
+  },
+  {
+    "StepId": "#25885",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1697508",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCC2"
+  },
+  {
+    "StepId": "#26067",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1697592",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCBU"
+  },
+  {
+    "StepId": "#26249",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1697674",
+    "GlobalId": "2$Og93fmzBnQSQibDXlC9i"
+  },
+  {
+    "StepId": "#26431",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1697734",
+    "GlobalId": "2$Og93fmzBnQSQibDXlC8W"
+  },
+  {
+    "StepId": "#26613",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1697802",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCti"
+  },
+  {
+    "StepId": "#26795",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1697900",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCsA"
+  },
+  {
+    "StepId": "#26977",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1697994",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCqi"
+  },
+  {
+    "StepId": "#27159",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1698054",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCpW"
+  },
+  {
+    "StepId": "#27341",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1698134",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCom"
+  },
+  {
+    "StepId": "#27523",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1698204",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCnw"
+  },
+  {
+    "StepId": "#29307",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:5000*5000:1698558",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCyO"
+  },
+  {
+    "StepId": "#29377",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:5000*5000:1698635",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCwj"
+  },
+  {
+    "StepId": "#29424",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:5000*5000:1698705",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCvt"
+  },
+  {
+    "StepId": "#31073",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:2500*4500 h2:1699397",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCkZ"
+  },
+  {
+    "StepId": "#31143",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:2500*4500 h2:1699470",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCje"
+  },
+  {
+    "StepId": "#32792",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:3000*4500:1699636",
+    "GlobalId": "2$Og93fmzBnQSQibDXlChI"
+  },
+  {
+    "StepId": "#32862",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:3000*4500:1699731",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCfr"
+  },
+  {
+    "StepId": "#32910",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:3000*4500:1699757",
+    "GlobalId": "2$Og93fmzBnQSQibDXlCfB"
+  },
+  {
+    "StepId": "#32958",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1700188",
+    "GlobalId": "3hLrhjRej1Ruuale0XJY3P"
+  },
+  {
+    "StepId": "#33393",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Fixed:5800*6500:1700661",
+    "GlobalId": "3hLrhjRej1Ruuale0XJYAm"
+  },
+  {
+    "StepId": "#33693",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1713246",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$ei"
+  },
+  {
+    "StepId": "#33741",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1713247",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$ej"
+  },
+  {
+    "StepId": "#33787",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1713248",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$eI"
+  },
+  {
+    "StepId": "#33857",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1713249",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$eJ"
+  },
+  {
+    "StepId": "#33903",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1713250",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$eG"
+  },
+  {
+    "StepId": "#33949",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1713251",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$eH"
+  },
+  {
+    "StepId": "#33995",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1713252",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$eM"
+  },
+  {
+    "StepId": "#34033",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Double-Flush:1800 x 2100mm:1713257",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$eR"
+  },
+  {
+    "StepId": "#34511",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713258",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$eO"
+  },
+  {
+    "StepId": "#34881",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713263",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$eT"
+  },
+  {
+    "StepId": "#35063",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713268",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$e6"
+  },
+  {
+    "StepId": "#35245",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713273",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$eB"
+  },
+  {
+    "StepId": "#35427",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713278",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$eC"
+  },
+  {
+    "StepId": "#35610",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713283",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$hn"
+  },
+  {
+    "StepId": "#35792",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713288",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$hw"
+  },
+  {
+    "StepId": "#35974",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713293",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$h$"
+  },
+  {
+    "StepId": "#36156",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713298",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$hW"
+  },
+  {
+    "StepId": "#36338",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713303",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$hb"
+  },
+  {
+    "StepId": "#36520",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713308",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$hk"
+  },
+  {
+    "StepId": "#36702",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713313",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$hJ"
+  },
+  {
+    "StepId": "#36884",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713318",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$hK"
+  },
+  {
+    "StepId": "#37066",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713323",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$hP"
+  },
+  {
+    "StepId": "#37248",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1713328",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$h2"
+  },
+  {
+    "StepId": "#37430",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 4000mm 2:1713333",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$h7"
+  },
+  {
+    "StepId": "#37612",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713338",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$h8"
+  },
+  {
+    "StepId": "#37795",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713343",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$hD"
+  },
+  {
+    "StepId": "#37977",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1713473",
+    "GlobalId": "0FB0hIE7PC3gVNpdBQH$ip"
+  },
+  {
+    "StepId": "#38167",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1715735",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lpOs"
+  },
+  {
+    "StepId": "#38213",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1716126",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lpU$"
+  },
+  {
+    "StepId": "#38259",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1716660",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6locL"
+  },
+  {
+    "StepId": "#38305",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1716909",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6logC"
+  },
+  {
+    "StepId": "#38351",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1717200",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6loln"
+  },
+  {
+    "StepId": "#38397",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1717382",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lood"
+  },
+  {
+    "StepId": "#38443",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1717583",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lork"
+  },
+  {
+    "StepId": "#38489",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1717910",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lowt"
+  },
+  {
+    "StepId": "#38535",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1718219",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lo$g"
+  },
+  {
+    "StepId": "#38581",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1718491",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lo3w"
+  },
+  {
+    "StepId": "#38627",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1719062",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6loCt"
+  },
+  {
+    "StepId": "#38673",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1719615",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6loKU"
+  },
+  {
+    "StepId": "#38719",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1719924",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6loPL"
+  },
+  {
+    "StepId": "#38765",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1720765",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lrcS"
+  },
+  {
+    "StepId": "#38811",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1721949",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lrvy"
+  },
+  {
+    "StepId": "#38857",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1722238",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lrzV"
+  },
+  {
+    "StepId": "#38903",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1722492",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lr1T"
+  },
+  {
+    "StepId": "#38949",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1722719",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lr5_"
+  },
+  {
+    "StepId": "#38995",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1722900",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lr8r"
+  },
+  {
+    "StepId": "#39041",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1723224",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lrDv"
+  },
+  {
+    "StepId": "#39087",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1723414",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lrGt"
+  },
+  {
+    "StepId": "#39133",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1724426",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqWh"
+  },
+  {
+    "StepId": "#39179",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1724749",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqbi"
+  },
+  {
+    "StepId": "#39225",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1724825",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqcu"
+  },
+  {
+    "StepId": "#39271",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1724987",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqeQ"
+  },
+  {
+    "StepId": "#39309",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1725394",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqlp"
+  },
+  {
+    "StepId": "#39492",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1725540",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqn5"
+  },
+  {
+    "StepId": "#39674",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1725620",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqoL"
+  },
+  {
+    "StepId": "#39856",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1725698",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqqZ"
+  },
+  {
+    "StepId": "#40046",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1725925",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqt4"
+  },
+  {
+    "StepId": "#40084",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1725981",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lquy"
+  },
+  {
+    "StepId": "#40267",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1726055",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqv6"
+  },
+  {
+    "StepId": "#40449",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1726139",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqwQ"
+  },
+  {
+    "StepId": "#40631",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1726323",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqzI"
+  },
+  {
+    "StepId": "#40813",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:900 x 2100mm:1726815",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lq5_"
+  },
+  {
+    "StepId": "#40861",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Single-Flush:900 x 2100mm:1726909",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lq6S"
+  },
+  {
+    "StepId": "#44007",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Double-Flush:1800 x 2000mm:1727293",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqCS"
+  },
+  {
+    "StepId": "#44079",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Double-Flush:1800 x 2000mm:1727382",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqEt"
+  },
+  {
+    "StepId": "#44126",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Double-Flush:1800 x 2000mm:1727512",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqGv"
+  },
+  {
+    "StepId": "#44173",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Double-Flush:1800 x 2000mm:1727560",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqHf"
+  },
+  {
+    "StepId": "#65275",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2000mm:1727644",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqIz"
+  },
+  {
+    "StepId": "#65362",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2000mm:1727725",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqJC"
+  },
+  {
+    "StepId": "#65412",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2000mm:1728195",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lqRY"
+  },
+  {
+    "StepId": "#65463",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2000mm:1728765",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltZS"
+  },
+  {
+    "StepId": "#65513",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Double-Flush:1800 x 2000mm:1728915",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltco"
+  },
+  {
+    "StepId": "#65561",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2000mm:1729045",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lteq"
+  },
+  {
+    "StepId": "#86653",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2000mm:1729123",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltf2"
+  },
+  {
+    "StepId": "#86706",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2000mm:1730004",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lttr"
+  },
+  {
+    "StepId": "#86757",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2000mm:1730104",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltuP"
+  },
+  {
+    "StepId": "#86816",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1731351",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltCs"
+  },
+  {
+    "StepId": "#86862",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1731857",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltKm"
+  },
+  {
+    "StepId": "#86900",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732196",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltP5"
+  },
+  {
+    "StepId": "#87083",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732201",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltP8"
+  },
+  {
+    "StepId": "#87265",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732206",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltPF"
+  },
+  {
+    "StepId": "#87447",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732211",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltPI"
+  },
+  {
+    "StepId": "#87629",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732216",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltPP"
+  },
+  {
+    "StepId": "#87811",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732221",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltPS"
+  },
+  {
+    "StepId": "#87993",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732226",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltQZ"
+  },
+  {
+    "StepId": "#88175",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732241",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltQm"
+  },
+  {
+    "StepId": "#88358",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732246",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltQt"
+  },
+  {
+    "StepId": "#88540",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732251",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltQw"
+  },
+  {
+    "StepId": "#88722",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732256",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltQ1"
+  },
+  {
+    "StepId": "#88904",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732261",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltQ4"
+  },
+  {
+    "StepId": "#89086",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732266",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltQB"
+  },
+  {
+    "StepId": "#89268",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732271",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltQE"
+  },
+  {
+    "StepId": "#89450",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732276",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltQL"
+  },
+  {
+    "StepId": "#89632",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732281",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltQO"
+  },
+  {
+    "StepId": "#89814",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732286",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltQV"
+  },
+  {
+    "StepId": "#89996",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732291",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltRY"
+  },
+  {
+    "StepId": "#90178",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1732296",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6ltRf"
+  },
+  {
+    "StepId": "#90385",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1733134",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lsel"
+  },
+  {
+    "StepId": "#90457",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1733289",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lsg8"
+  },
+  {
+    "StepId": "#90495",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1733290",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lsgB"
+  },
+  {
+    "StepId": "#90679",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1733295",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lsgE"
+  },
+  {
+    "StepId": "#90861",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1733300",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lsgL"
+  },
+  {
+    "StepId": "#91043",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1733305",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lsgO"
+  },
+  {
+    "StepId": "#91225",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1733320",
+    "GlobalId": "1vrNmiVxH3Zf0Lt_f6lshf"
+  },
+  {
+    "StepId": "#91433",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1734916",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd8hQ"
+  },
+  {
+    "StepId": "#91491",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1735183",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd8dH"
+  },
+  {
+    "StepId": "#91550",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1735286",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd8ce"
+  },
+  {
+    "StepId": "#91619",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1735650",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd8Wy"
+  },
+  {
+    "StepId": "#91677",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1735910",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd8yu"
+  },
+  {
+    "StepId": "#91740",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1736129",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd8uV"
+  },
+  {
+    "StepId": "#91797",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1736245",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd8th"
+  },
+  {
+    "StepId": "#91854",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1736520",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd8oM"
+  },
+  {
+    "StepId": "#91911",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1736788",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd7EA"
+  },
+  {
+    "StepId": "#91968",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1737060",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd7Aw"
+  },
+  {
+    "StepId": "#92025",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1737298",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd76C"
+  },
+  {
+    "StepId": "#92082",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1737496",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd736"
+  },
+  {
+    "StepId": "#92128",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1737860",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd7TQ"
+  },
+  {
+    "StepId": "#92174",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1738026",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd7Rq"
+  },
+  {
+    "StepId": "#92231",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1739332",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd7cQ"
+  },
+  {
+    "StepId": "#92288",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1739493",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd7ax"
+  },
+  {
+    "StepId": "#92346",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1739733",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd7WB"
+  },
+  {
+    "StepId": "#92403",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1739840",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd7_U"
+  },
+  {
+    "StepId": "#92441",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Double-Flush:1800 x 2000mm:1740102",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd7wO"
+  },
+  {
+    "StepId": "#92489",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1740624",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd7oE"
+  },
+  {
+    "StepId": "#92671",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1740738",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd7mS"
+  },
+  {
+    "StepId": "#92853",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1740820",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd6FA"
+  },
+  {
+    "StepId": "#93036",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1741048",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd6Cc"
+  },
+  {
+    "StepId": "#93218",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1741174",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd6Ae"
+  },
+  {
+    "StepId": "#93400",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1741260",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd68I"
+  },
+  {
+    "StepId": "#93582",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1741334",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd678"
+  },
+  {
+    "StepId": "#93786",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1742133",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd6Rh"
+  },
+  {
+    "StepId": "#93824",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1742747",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd6H5"
+  },
+  {
+    "StepId": "#94006",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1742929",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd6kF"
+  },
+  {
+    "StepId": "#94188",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1742983",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd6jP"
+  },
+  {
+    "StepId": "#94370",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Double-Flush:1800 x 2000mm:1743774",
+    "GlobalId": "3sh$hbNXzDQPZdWYgWd6X0"
+  },
+  {
+    "StepId": "#94418",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Double-Flush:1800 x 2000mm:1743936",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeSIb"
+  },
+  {
+    "StepId": "#115923",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2100mm:1744381",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeSKO"
+  },
+  {
+    "StepId": "#115996",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2100mm:1744456",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeSQj"
+  },
+  {
+    "StepId": "#116046",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2100mm:1744748",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeSU9"
+  },
+  {
+    "StepId": "#116096",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2100mm:1744792",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeSTz"
+  },
+  {
+    "StepId": "#116147",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2100mm:1744832",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeSSb"
+  },
+  {
+    "StepId": "#116197",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2100mm:1744896",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVZb"
+  },
+  {
+    "StepId": "#116247",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2100mm:1744954",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVZV"
+  },
+  {
+    "StepId": "#116298",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2100mm:1745002",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVYF"
+  },
+  {
+    "StepId": "#116348",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2100mm:1745124",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVW1"
+  },
+  {
+    "StepId": "#116420",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1745399",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVaI"
+  },
+  {
+    "StepId": "#116460",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1745420",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVhf"
+  },
+  {
+    "StepId": "#116663",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1745426",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVht"
+  },
+  {
+    "StepId": "#116701",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1745429",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVhm"
+  },
+  {
+    "StepId": "#116883",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1745434",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVh$"
+  },
+  {
+    "StepId": "#117084",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1745464",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVhT"
+  },
+  {
+    "StepId": "#117145",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1745998",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVoh"
+  },
+  {
+    "StepId": "#117203",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1746472",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVxD"
+  },
+  {
+    "StepId": "#117264",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1746891",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVyk"
+  },
+  {
+    "StepId": "#117321",
+    "Entity": "IFCWALL",
+    "Name": "Basic Wall:Exterior - Urethane Panel THK100 (0.5 + Ins + 0.8):1747097",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeV1y"
+  },
+  {
+    "StepId": "#120458",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Double-Flush:1800 x 2000mm:1747507",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVBM"
+  },
+  {
+    "StepId": "#120508",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Double-Flush:1800 x 2000mm:1747892",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVDH"
+  },
+  {
+    "StepId": "#120556",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Double-Flush:1800 x 2000mm:1747942",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVC3"
+  },
+  {
+    "StepId": "#120604",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Passage-Double-Flush:1800 x 2000mm:1748026",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVJV"
+  },
+  {
+    "StepId": "#120905",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Fixed:6000 3800:1748561",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVQq"
+  },
+  {
+    "StepId": "#121441",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Fixed:6000 2950:1748922",
+    "GlobalId": "0jFm0KXnP6Xw9$AXnPeVTV"
+  },
+  {
+    "StepId": "#121725",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1749125",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYE6"
+  },
+  {
+    "StepId": "#121907",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Casement-Double:1000 x 2000mm 3:1749217",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYFY"
+  },
+  {
+    "StepId": "#122104",
+    "Entity": "IFCSLAB",
+    "Name": "Floor:Concrete 100mm:1749559",
+    "GlobalId": "0dpFQ$f213TRdEhy71KY4q"
+  },
+  {
+    "StepId": "#122277",
+    "Entity": "IFCSLAB",
+    "Name": "Floor:Concrete 150mm:1749614",
+    "GlobalId": "0dpFQ$f213TRdEhy71KY5j"
+  },
+  {
+    "StepId": "#122365",
+    "Entity": "IFCSLAB",
+    "Name": "Floor:Concrete 150mm:1750597",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYL6"
+  },
+  {
+    "StepId": "#122413",
+    "Entity": "IFCSLAB",
+    "Name": "Floor:Concrete 150mm:1750618",
+    "GlobalId": "0dpFQ$f213TRdEhy71KYLP"
+  },
+  {
+    "StepId": "#122458",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2000mm:1751121",
+    "GlobalId": "0JqzLCwUv9CBhvN4sZk7ur"
+  },
+  {
+    "StepId": "#122508",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2000mm:1751197",
+    "GlobalId": "0JqzLCwUv9CBhvN4sZk7xv"
+  },
+  {
+    "StepId": "#122558",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2000mm:1751281",
+    "GlobalId": "0JqzLCwUv9CBhvN4sZk7wL"
+  },
+  {
+    "StepId": "#122609",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2000mm:1751605",
+    "GlobalId": "0JqzLCwUv9CBhvN4sZk7nH"
+  },
+  {
+    "StepId": "#122659",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2000mm:1751737",
+    "GlobalId": "0JqzLCwUv9CBhvN4sZk7pT"
+  },
+  {
+    "StepId": "#122709",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Fixed:6000 2950:1751944",
+    "GlobalId": "29XUTLPWbFlRP_BXB9Amrg"
+  },
+  {
+    "StepId": "#122857",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2000mm:1752094",
+    "GlobalId": "29XUTLPWbFlRP_BXB9Amhy"
+  },
+  {
+    "StepId": "#122907",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2000mm:1752330",
+    "GlobalId": "29XUTLPWbFlRP_BXB9Amle"
+  },
+  {
+    "StepId": "#123211",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Fixed:6000*5700 4:1752964",
+    "GlobalId": "01Io4YSaL04vLx1MBj37QN"
+  },
+  {
+    "StepId": "#123748",
+    "Entity": "IFCWINDOW",
+    "Name": "M_Window-Fixed:4000*5700 3:1753359",
+    "GlobalId": "01Io4YSaL04vLx1MBj30WS"
+  },
+  {
+    "StepId": "#124041",
+    "Entity": "IFCSLAB",
+    "Name": "Floor:Concrete 150mm:1754009",
+    "GlobalId": "2KUzuESwjFIPwkXI0aeSHD"
+  },
+  {
+    "StepId": "#124085",
+    "Entity": "IFCDOOR",
+    "Name": "M_Door-Exterior-Single-Two_Lite:900 x 2100mm:1754812",
+    "GlobalId": "0i7PHJb856QgtgaPo8ImYv"
+  }
+]
