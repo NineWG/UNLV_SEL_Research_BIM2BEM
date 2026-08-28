@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated journal article and this repository."
+title: "LLM-Assisted BIM2BEM Reproducibility Package"
+type: software
+authors:
+  - name: "UNLV Smart Energy Laboratory (SEL)"
+abstract: "Reproducibility materials for an LLM-assisted workflow that converts IFC-based BIM information into EnergyPlus IDF models."
+repository-code: "https://github.com/NineWG/UNLV_SEL_Research_BIM2BEM"
+license: MIT
+version: 0.1.0

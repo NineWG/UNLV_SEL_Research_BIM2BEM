@@ -1,0 +1,33 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python and notebook artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Operating-system and editor artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+*.tmp
+
+# Default transient EnergyPlus outputs
+eplusout.eso
+eplusout.mtr
+eplusout.sql
+eplusout.rdd
+eplusout.mdd
+eplusout.eio
+eplusout.end
+eplusout.bnd
+eplusout.dxf
+eplusout.svg
+eplusout.shd

@@ -1,2 +1,8 @@
+# Case-Study IFC Input
 
-Since I can't upload revit file due to its size, Revit file will be made available on request via email.
+4StoryFactoryBuilding.ifc is the IFC-based BIM input used by the LLM-assisted
+BIM2BEM workflow.
+
+The original native Revit model is not included in this repository. The IFC
+file is provided as the reproducibility input because it is the data exchange
+format processed by the workflow.
