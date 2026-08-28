@@ -15,6 +15,8 @@ model for simulation readiness.
 - Library.zip: prototype-model reference library.
 - Weather.zip: weather and design-day reference library.
 - Schedules.idf: EnergyPlus schedule reference library.
+- Result_with_Input_and_Prompt/: case-study screenshot for the prompt and
+  output of Step 8.
 
 ## Custom GPT Setup
 
@@ -32,3 +34,10 @@ Schedules.idf is a legacy EnergyPlus reference data set derived from the BLAST
 schedule library and building-type patterns from ASHRAE 90.1-1989, Section 13.
 It is a reference source, not a representation of the actual operation of the
 case-study building or a current code requirement.
+
+## Example Prompt and Output
+
+The screenshot in `Result_with_Input_and_Prompt/` visually documents the
+case-study Step 8 interaction and result. It supplements, rather than replaces,
+the enriched IDF and machine-readable intermediate artifacts in
+`../../BIM2BEM_Input_Output/Output/`.

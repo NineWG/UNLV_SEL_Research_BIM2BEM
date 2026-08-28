@@ -17,6 +17,7 @@ general-purpose or fully validated BIM2BEM application.
     +-- BIM2BEM_Input_Output  IFC input and intermediate workflow outputs
     +-- BEM_Models            LLM-generated and manual-reference EnergyPlus models
     +-- GPTs                  Custom GPT configuration and knowledge files
+    +-- Images                Visual workflow and geometry-comparison figures
     +-- Weather_Data          EPW and DDY files used for the case-study simulation
     +-- CITATION.cff           Repository citation metadata
     +-- THIRD_PARTY_NOTICES.md Attribution and source notes for included references
@@ -25,6 +26,10 @@ general-purpose or fully validated BIM2BEM application.
 
 Each directory contains a README describing its contents and role in the
 workflow.
+
+The GPT workflow packages also contain illustrative case-study screenshots of
+the prompts and outputs for the reported stages. The machine-readable inputs,
+scripts, and output artifacts remain the source of record for reproduction.
 
 ## Case-Study Workflow
 
