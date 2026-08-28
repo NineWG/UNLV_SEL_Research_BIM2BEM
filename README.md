@@ -56,7 +56,7 @@ two configurations are included under GPTs/.
 ## Scope and Data Notes
 
 - The case-study building is represented by the included IFC input. The
-  original native Revit model is not distributed in this repository due to size it will be made available on request.
+  original native Revit model is not distributed in this repository due to the file size limit. It will be made available on request.
 - The simulation location and weather data are provided for reproducibility of
   the reported case-study simulation; they do not establish the actual
   location of the building.
