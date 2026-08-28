@@ -5,8 +5,8 @@ custom GPT workflows used by the case study.
 
 | Directory | Role |
 | --- | --- |
-| BIM2BEM_Geometry/ | Extracts and processes IFC geometry, assigns boundary conditions, and produces an initial IDF. |
-| BIM2BEM_Enrichment/ | Enriches the initial IDF with traceable energy-related input parameters and validates simulation readiness. |
+| BIM2BEM_Geometry | Extracts and processes IFC geometry, assigns boundary conditions, and produces an initial IDF. |
+| BIM2BEM_Enrichment | Enriches the initial IDF with traceable energy-related input parameters and validates simulation readiness. |
 
 ## Reconstructing the Configurations
 
