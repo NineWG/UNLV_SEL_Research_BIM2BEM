@@ -47,7 +47,7 @@ The figure below illustrates the geometric transformation from the source
 LLM-assisted BIM2BEM workflow.
 
 <p align="center">
-  <img src="images/BIM_to_IDF_geometry_result.png"
+  <img src="Images/BIM_to_IDF_geometry_result.png"
        alt="Comparison of the source Revit BIM model and generated EnergyPlus IDF geometry"
        width="750">
 </p>
