@@ -1,4 +1,4 @@
-# LLM-Assisted BIM2BEM Reproducibility Package
+# LLM-Assisted BIM2BEM Package
 
 This repository contains the reproducibility materials for an LLM-assisted
 building information modeling to building energy modeling (BIM2BEM) workflow.
@@ -30,7 +30,7 @@ workflow.
 
 1. Use BIM2BEM_Input_Output/Input/4StoryFactoryBuilding.ifc as the source IFC
    input file.
-2. Configure the two custom GPT workflows from the packages in GPTs/.
+2. Configure the two custom GPT workflows from the packages in GPTs.
 3. Run the geometry workflow to create intermediate geometry files and the
    initial Step 7 IDF.
 4. Run the enrichment workflow to create the enriched IDF using traceable IFC,
@@ -38,7 +38,7 @@ workflow.
 5. Run the LLM-generated and manual reference IDFs with the same case-study
    weather data in EnergyPlus 9.6.
 6. Inspect the IDFs and the accompanying CSV, HTML, and ERR result files in
-   BEM_Models/.
+   BEM_Models.
 
 ## Software and Access Requirements
 
