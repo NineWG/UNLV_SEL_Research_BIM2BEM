@@ -944,6 +944,15 @@ Construction,
     BIM2BEM_Steel Frame/Cavity,  !- Layer 4
     BIM2BEM_G01 16mm gypsum board;  !- Layer 5
 
+! Construction fix: reverse layer order for the opposite side of interzone walls.
+Construction,
+    BIM2BEM_Interior_Wall_Reverse,  !- Name
+    BIM2BEM_G01 16mm gypsum board,  !- Outside Layer
+    BIM2BEM_Steel Frame/Cavity,  !- Layer 2
+    BIM2BEM_Interior Wall Addi Insul,  !- Layer 3
+    BIM2BEM_G01 16mm gypsum board,  !- Layer 4
+    BIM2BEM_F07 25mm stucco; !- Layer 5
+
 Construction,
     BIM2BEM_int_slab_floor,  !- Name
     BIM2BEM_100mm Normalweight concrete floor,  !- Outside Layer
@@ -1670,6 +1679,7 @@ BuildingSurface:Detailed,
     1.660696000009,          !- Vertex 4 Y-coordinate {m}
     -130.299312000000;       !- Vertex 4 Z-coordinate {m}
 
+! Geometry fix: split original non-convex surface L2_Zone21_Wall_Roof into two convex surfaces.
 BuildingSurface:Detailed,
     L2_Zone21_Wall_Roof,     !- Name
     Roof,                    !- Surface Type
@@ -1681,25 +1691,44 @@ BuildingSurface:Detailed,
     SunExposed,              !- Sun Exposure
     WindExposed,             !- Wind Exposure
     ,                        !- View Factor to Ground
-    6,                       !- Number of Vertices
+    4,                       !- Number of Vertices
+    -2.650000000000,         !- Vertex 1 X-coordinate {m}
+    11.660792792193,         !- Vertex 1 Y-coordinate {m}
+    -124.299312000000,       !- Vertex 1 Z-coordinate {m}
+    -2.650000000000,         !- Vertex 2 X-coordinate {m}
+    -2.339304000000,         !- Vertex 2 Y-coordinate {m}
+    -124.299312000000,       !- Vertex 2 Z-coordinate {m}
+    27.350000000000,         !- Vertex 3 X-coordinate {m}
+    -2.339304000000,         !- Vertex 3 Y-coordinate {m}
+    -124.299312000000,       !- Vertex 3 Z-coordinate {m}
+    27.350000000000,         !- Vertex 4 X-coordinate {m}
+    11.660792792193,         !- Vertex 4 Y-coordinate {m}
+    -124.299312000000;       !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    L2_Zone21_Wall_Roof_2,   !- Name
+    Roof,                    !- Surface Type
+    BIM2BEM_nonres_roof,     !- Construction Name
+    L2_Zone_21,              !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    4,                       !- Number of Vertices
     0.650000000000,          !- Vertex 1 X-coordinate {m}
     18.160792792189,         !- Vertex 1 Y-coordinate {m}
     -124.299312000000,       !- Vertex 1 Z-coordinate {m}
     0.650000000000,          !- Vertex 2 X-coordinate {m}
     11.660792792193,         !- Vertex 2 Y-coordinate {m}
     -124.299312000000,       !- Vertex 2 Z-coordinate {m}
-    -2.650000000000,         !- Vertex 3 X-coordinate {m}
+    27.350000000000,         !- Vertex 3 X-coordinate {m}
     11.660792792193,         !- Vertex 3 Y-coordinate {m}
     -124.299312000000,       !- Vertex 3 Z-coordinate {m}
-    -2.650000000000,         !- Vertex 4 X-coordinate {m}
-    -2.339304000000,         !- Vertex 4 Y-coordinate {m}
-    -124.299312000000,       !- Vertex 4 Z-coordinate {m}
-    27.350000000000,         !- Vertex 5 X-coordinate {m}
-    -2.339303999996,         !- Vertex 5 Y-coordinate {m}
-    -124.299312000000,       !- Vertex 5 Z-coordinate {m}
-    27.350000000000,         !- Vertex 6 X-coordinate {m}
-    18.160792792189,         !- Vertex 6 Y-coordinate {m}
-    -124.299312000000;       !- Vertex 6 Z-coordinate {m}
+    27.350000000000,         !- Vertex 4 X-coordinate {m}
+    18.160792792189,         !- Vertex 4 Y-coordinate {m}
+    -124.299312000000;       !- Vertex 4 Z-coordinate {m}
 
 BuildingSurface:Detailed,
     L2_Zone21_Wall_East_3,   !- Name
@@ -1804,7 +1833,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone21_Wall_West_1,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_21,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -1829,7 +1858,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone21_Wall_North_1,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_21,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -2004,7 +2033,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone21_Wall_East_1,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_21,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -2229,7 +2258,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_24_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_24,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -2279,7 +2308,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_24_Wall_North,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_24,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -2329,7 +2358,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone22_Wall_East_2,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_22,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -2404,7 +2433,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_25_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_25,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -2754,7 +2783,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_28_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_28,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -2954,7 +2983,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_29_Wall_West_2,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_29,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -3316,7 +3345,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_29_Wall_North_1, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_29,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -3441,7 +3470,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_31_Wall_South,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_31,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -3516,7 +3545,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_30_South_3,      !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_30,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -3666,7 +3695,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_32_Wall_South,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_32,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -3691,7 +3720,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_32_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_32,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -3766,7 +3795,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_33_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_33,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -3841,7 +3870,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_33_Wall_South,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_33,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -3891,7 +3920,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_34_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_34,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -3966,7 +3995,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_34_Wall_South,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_34,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -4041,7 +4070,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_35_Wall_South,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_35,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -4116,7 +4145,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_35_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_35,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -4291,7 +4320,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_35_Wall_East_2,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_35,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -4341,7 +4370,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_37_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_37,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -4691,7 +4720,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     A99075,                  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_38,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -4716,7 +4745,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_39_Wall_West_1,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_39,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -4741,7 +4770,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_39_Wall_North_1, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_39,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -4766,7 +4795,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_39_Wall_North_2, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_39,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -4816,7 +4845,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_40_Wall_South_1, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_40,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -4841,7 +4870,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_40_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_40,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -4866,7 +4895,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_40_Wall_East,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_40,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -4891,7 +4920,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_40_Wall_North,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_40,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -5041,7 +5070,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_41_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_41,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -5116,7 +5145,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_41_Wall_North,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_41,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -5166,7 +5195,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_42_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_42,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -5191,7 +5220,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_42_Wall_North,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_42,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -5671,7 +5700,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_2_Wall_North_1,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_2,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -5696,7 +5725,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_2_Wall_North_2,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_2,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -5721,7 +5750,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_2_Wall_West_2,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_2,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -5846,7 +5875,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_3_Wall_West_1,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_3,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -5896,7 +5925,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_3_Wall_West_2,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_3,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -6021,7 +6050,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_4_Wall_North_2,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_4,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -6096,7 +6125,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_4_Wall_North_1,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_4,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -6171,7 +6200,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_5_Wall_North,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_5,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -6446,7 +6475,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_6_Wall_North,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_6,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -6602,7 +6631,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_7_Wall_North,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_7,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -6889,7 +6918,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_8_Wall_West_1,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_8,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -6939,7 +6968,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_8_Wall_West_3,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_8,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -6964,7 +6993,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_8_Wall_West_2,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_8,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -6989,7 +7018,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_8_Wall_West_4,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_8,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -7014,7 +7043,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_8_Wall_West_5,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_8,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -7220,7 +7249,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_9_Wall_South,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_9,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -7245,7 +7274,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_9_Wall_West,     !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_9,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -7345,7 +7374,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_10_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_10,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -7470,7 +7499,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_8_Wall_North_3,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_8,               !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -7726,7 +7755,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_11_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_11,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -7751,7 +7780,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_11_Wall_South,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_11,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -7913,7 +7942,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_12_Wall_West_1,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_12,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -8125,7 +8154,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_13_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_13,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -8175,7 +8204,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_13_Wall_South,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_13,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -8200,7 +8229,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_13_Wall_East_1,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_13,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -8350,7 +8379,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_14_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_14,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -8375,7 +8404,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_12_Wall_North_2, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_12,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -8450,7 +8479,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_15_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_15,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -8550,7 +8579,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_12_Wall_North_3, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_12,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -8650,7 +8679,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_16_Wall_South,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_16,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -8675,7 +8704,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_16_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_16,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -8837,7 +8866,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_19_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_19,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -8862,7 +8891,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_19_Wall_North,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_19,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -9087,7 +9116,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_17_Wall_West_3,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_17,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -9162,7 +9191,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_17_Wall_West_1,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_17,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -9187,7 +9216,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_17_Wall_West_2,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_17,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -9262,7 +9291,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L1_Zone_18_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L1_Zone_18,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -9637,7 +9666,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_47_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_47,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -9812,7 +9841,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_48_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_48,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -9912,7 +9941,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_49_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_49,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -10137,7 +10166,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_50_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_50,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -10262,7 +10291,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_51_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_51,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -10687,7 +10716,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_55_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_55,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -10787,7 +10816,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_56_Wall_West,    !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_56,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -10812,7 +10841,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_56_Wall_North_1, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_56,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -10887,7 +10916,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_51_Wall_South_2, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_51,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -10912,7 +10941,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_56_Wall_North_2, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_56,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -11362,7 +11391,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_27_Wall_East_2,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_27,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -11387,7 +11416,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_27_Wall_North_2, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_27,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -11434,6 +11463,7 @@ BuildingSurface:Detailed,
     -0.000000207807,         !- Vertex 4 Y-coordinate {m}
     6.000000148876;          !- Vertex 4 Z-coordinate {m}
 
+! Geometry fix: split original non-convex surface L2_Zone_27_Roof into two convex surfaces.
 BuildingSurface:Detailed,
     L2_Zone_27_Roof,         !- Name
     Roof,                    !- Surface Type
@@ -11445,7 +11475,7 @@ BuildingSurface:Detailed,
     SunExposed,              !- Sun Exposure
     WindExposed,             !- Wind Exposure
     ,                        !- View Factor to Ground
-    6,                       !- Number of Vertices
+    4,                       !- Number of Vertices
     -12.000000000000,        !- Vertex 1 X-coordinate {m}
     -5.700000207807,         !- Vertex 1 Y-coordinate {m}
     6.000000148876,          !- Vertex 1 Z-coordinate {m}
@@ -11453,22 +11483,41 @@ BuildingSurface:Detailed,
     -8.100000207808,         !- Vertex 2 Y-coordinate {m}
     6.000000148876,          !- Vertex 2 Z-coordinate {m}
     0.000000000000,          !- Vertex 3 X-coordinate {m}
-    -8.100000207809,         !- Vertex 3 Y-coordinate {m}
+    -8.100000207808,         !- Vertex 3 Y-coordinate {m}
+    6.000000148876,          !- Vertex 3 Z-coordinate {m}
+    0.000000000000,          !- Vertex 4 X-coordinate {m}
+    -5.700000207807,         !- Vertex 4 Y-coordinate {m}
+    6.000000148876;          !- Vertex 4 Z-coordinate {m}
+
+BuildingSurface:Detailed,
+    L2_Zone_27_Roof_2,       !- Name
+    Roof,                    !- Surface Type
+    BIM2BEM_nonres_roof,     !- Construction Name
+    L2_Zone_27,              !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    ,                        !- View Factor to Ground
+    4,                       !- Number of Vertices
+    -6.000000000000,         !- Vertex 1 X-coordinate {m}
+    -0.000000207807,         !- Vertex 1 Y-coordinate {m}
+    6.000000148876,          !- Vertex 1 Z-coordinate {m}
+    -6.000000000000,         !- Vertex 2 X-coordinate {m}
+    -5.700000207807,         !- Vertex 2 Y-coordinate {m}
+    6.000000148876,          !- Vertex 2 Z-coordinate {m}
+    0.000000000000,          !- Vertex 3 X-coordinate {m}
+    -5.700000207807,         !- Vertex 3 Y-coordinate {m}
     6.000000148876,          !- Vertex 3 Z-coordinate {m}
     0.000000000000,          !- Vertex 4 X-coordinate {m}
     -0.000000207807,         !- Vertex 4 Y-coordinate {m}
-    6.000000148876,          !- Vertex 4 Z-coordinate {m}
-    -6.000000000000,         !- Vertex 5 X-coordinate {m}
-    -0.000000207807,         !- Vertex 5 Y-coordinate {m}
-    6.000000148876,          !- Vertex 5 Z-coordinate {m}
-    -6.000000000000,         !- Vertex 6 X-coordinate {m}
-    -5.700000207807,         !- Vertex 6 Y-coordinate {m}
-    6.000000148876;          !- Vertex 6 Z-coordinate {m}
+    6.000000148876;          !- Vertex 4 Z-coordinate {m}
 
 BuildingSurface:Detailed,
     L2_Zone_27_Wall_West_2,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_27,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -11493,7 +11542,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_27_Wall_West_1,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_27,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -11518,7 +11567,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_27_Wall_South_2, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_27,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -11793,7 +11842,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L4_Zone_58_Wall_West_2,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L4_Zone_58,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -11868,7 +11917,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L4_Zone_59_North,        !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L4_Zone_59,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12218,7 +12267,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_27_Wall_East_1,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_27,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12299,7 +12348,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_27_Wall_South_1, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_27,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12324,7 +12373,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_27_Wall_West_3,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_27,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12349,7 +12398,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_27_Wall_North_3, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_27,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12371,31 +12420,7 @@ BuildingSurface:Detailed,
     -5.700000207807,         !- Vertex 4 Y-coordinate {m}
     6.000000148876;          !- Vertex 4 Z-coordinate {m}
 
-BuildingSurface:Detailed,
-    E679DD,                  !- Name
-    Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
-    L3_Zone_48,              !- Zone Name
-    ,                        !- Space Name
-    Surface,                 !- Outside Boundary Condition
-    L3_Zone_52_Wall_North_4, !- Outside Boundary Condition Object
-    NoSun,                   !- Sun Exposure
-    NoWind,                  !- Wind Exposure
-    0.0,                     !- View Factor to Ground
-    4,                       !- Number of Vertices
-    0.000001651832,          !- Vertex 1 X-coordinate {m}
-    0.000000414711,          !- Vertex 1 Y-coordinate {m}
-    4.000000063260,          !- Vertex 1 Z-coordinate {m}
-    0.000000259030,          !- Vertex 2 X-coordinate {m}
-    0.000000000000,          !- Vertex 2 Y-coordinate {m}
-    0.000000746479,          !- Vertex 2 Z-coordinate {m}
-    1.800000259030,          !- Vertex 3 X-coordinate {m}
-    0.000000000000,          !- Vertex 3 Y-coordinate {m}
-    0.000000492958,          !- Vertex 3 Z-coordinate {m}
-    1.800001651832,          !- Vertex 4 X-coordinate {m}
-    0.000000414711,          !- Vertex 4 Y-coordinate {m}
-    4.000001519724;          !- Vertex 4 Z-coordinate {m}
-
+! Geometry fix: removed exact duplicate surface E679DD.
 BuildingSurface:Detailed,
     L1_Zone_9_Ceiling_3,     !- Name
     Ceiling,                 !- Surface Type
@@ -12424,7 +12449,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_38_Wall_South_1, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_38,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12474,7 +12499,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_39_Wall_West_3,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_39,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12499,7 +12524,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_39_Wall_West_2,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_39,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12561,7 +12586,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_52_Wall_East_2,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_52,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12586,7 +12611,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_52_Wall_North_6, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_52,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12636,7 +12661,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_52_Wall_East_1,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_52,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12786,7 +12811,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_52_Wall_North_2, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_52,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12811,7 +12836,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_52_Wall_North_3, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_52,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12836,7 +12861,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_52_Wall_North_4, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_52,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12861,7 +12886,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_52_Wall_North_5, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_52,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12886,7 +12911,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_52_Wall_North_7, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_52,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12936,7 +12961,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L2_Zone_31_Wall_East_1,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L2_Zone_31,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -12961,7 +12986,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_45_Wall_East_2,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_45,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -13036,7 +13061,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_45_Wall_South,   !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_45,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -13086,7 +13111,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_45_Wall_East_1,  !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_45,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -13111,7 +13136,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_52_Wall_South_2, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_52,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -13136,7 +13161,7 @@ BuildingSurface:Detailed,
 BuildingSurface:Detailed,
     L3_Zone_52_Wall_South_3, !- Name
     Wall,                    !- Surface Type
-    BIM2BEM_Interior_Wall,   !- Construction Name
+    BIM2BEM_Interior_Wall_Reverse,  !- Construction Name
     L3_Zone_52,              !- Zone Name
     ,                        !- Space Name
     Surface,                 !- Outside Boundary Condition
@@ -13183,31 +13208,7 @@ BuildingSurface:Detailed,
     0.399998627802,          !- Vertex 4 Y-coordinate {m}
     -0.000001249456;         !- Vertex 4 Z-coordinate {m}
 
-BuildingSurface:Detailed,
-    L3_Zone_46_Ceiling_2,    !- Name
-    Ceiling,                 !- Surface Type
-    BIM2BEM_int_slab_ceiling,!- Construction Name
-    L3_Zone_52,              !- Zone Name
-    ,                        !- Space Name
-    Surface,                 !- Outside Boundary Condition
-    L4_Zone_57_Floor_3,      !- Outside Boundary Condition Object
-    NoSun,                   !- Sun Exposure
-    NoWind,                  !- Wind Exposure
-    0.0,                     !- View Factor to Ground
-    4,                       !- Number of Vertices
-    4.000000382383,          !- Vertex 1 X-coordinate {m}
-    0.399998640149,          !- Vertex 1 Y-coordinate {m}
-    4.000002053189,          !- Vertex 1 Z-coordinate {m}
-    4.000000382383,          !- Vertex 2 X-coordinate {m}
-    -0.000001359854,         !- Vertex 2 Y-coordinate {m}
-    3.999998612112,          !- Vertex 2 Z-coordinate {m}
-    6.500000000000,          !- Vertex 3 X-coordinate {m}
-    -0.000001359854,         !- Vertex 3 Y-coordinate {m}
-    3.999998612112,          !- Vertex 3 Z-coordinate {m}
-    6.500000000000,          !- Vertex 4 X-coordinate {m}
-    0.399999863085,          !- Vertex 4 Y-coordinate {m}
-    4.000002053189;          !- Vertex 4 Z-coordinate {m}
-
+! Geometry fix: removed exact duplicate surface L3_Zone_46_Ceiling_2.
 BuildingSurface:Detailed,
     L3_Zone_52_Ceiling_2,    !- Name
     Ceiling,                 !- Surface Type
