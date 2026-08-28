@@ -14,10 +14,10 @@ general-purpose or fully validated BIM2BEM application.
 ## Repository Contents
 
     .
-    +-- BIM2BEM_Input_Output/  IFC input and intermediate workflow outputs
-    +-- BEM_Models/            LLM-generated and manual-reference EnergyPlus models
-    +-- GPTs/                  Custom GPT configuration and knowledge files
-    +-- Weather_Data/          EPW and DDY files used for the case-study simulation
+    +-- BIM2BEM_Input_Output  IFC input and intermediate workflow outputs
+    +-- BEM_Models            LLM-generated and manual-reference EnergyPlus models
+    +-- GPTs                  Custom GPT configuration and knowledge files
+    +-- Weather_Data          EPW and DDY files used for the case-study simulation
     +-- CITATION.cff           Repository citation metadata
     +-- THIRD_PARTY_NOTICES.md Attribution and source notes for included references
     +-- LICENSE                MIT license for original repository materials
