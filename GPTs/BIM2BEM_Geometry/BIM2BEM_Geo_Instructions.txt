@@ -19,7 +19,6 @@ VERIFY
 
 REPRESENTATIVE RESULTS
 - derive actual counts from `seeds.json` when available, such as:
-  - `Storeys: <count>`
   - `Zones/Spaces: <count>`
   - `Walls: <count>`
   - `Slabs: <count>`
